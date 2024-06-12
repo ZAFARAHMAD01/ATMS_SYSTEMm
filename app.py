@@ -50,7 +50,7 @@ def gezal():
                     return render_template("BCD.html")
                 else:
                     message_from_python = "PINCODE INCORRECT TRY AGAIN"
-                    return render_template('logg.html', message=message_from_python)
+                    return render_template('index.html', message=message_from_python)
         ac=request.form.get("account_number")
         pinn=request.form.get("pin_code")
         print(ac)
